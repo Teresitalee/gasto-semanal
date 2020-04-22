@@ -1,36 +1,37 @@
 import React , { Fragment , useState } from 'react';
 import Error from './Error';
 
-const Pregunta = () => {
+const Pregunta = ( {guardarRestante, guardarPresupuesto, actualizarPregunta }) => {
 
     // definir el state (estado)
     const [ cantidad , guardarCantidad ] = useState(0);
     const [ error, guardarError ] = useState(false);
+    
 
     // funcion que lee el presupuesto
     const definirPresupuesto = e => {
-       guardarCantidad( parseInt(e.target.value) )
+       guardarCantidad( parseInt(e.target.value, 10) )
     }
 
     //submit para definir el presupuesto
     const agregarPresupuesto = e => {
-        e.preventeDefault();
+        e.preventDefault();
 
         //validar 
-        if (cantidad < 1 || NaN(cantidad) ) {
-            guardarError(true);
+        if (cantidad < 1 || isNaN( cantidad ) ) {
+            guardarError(true);              
             return;
         }
 
 
         // si pasa la validacion
         guardarError(false);
-
-
-
+        guardarPresupuesto(cantidad);
+        guardarRestante(cantidad);
+        actualizarPregunta(false);
     }
 
-
+    
 
 
     return ( 
@@ -40,7 +41,7 @@ const Pregunta = () => {
             { error ? <Error mensaje=" El Presupuesto es incorrecto" /> : null }
 
             <form
-              onSubmit = {agregarPresupuesto} 
+              onSubmit={agregarPresupuesto}
             >
               
 
@@ -49,8 +50,6 @@ const Pregunta = () => {
                     className="u-full-width"
                     placeholder="Cuanto quieres gastar ?"
                     onChange={definirPresupuesto}
-                    
-                
                 />
 
                 <input
