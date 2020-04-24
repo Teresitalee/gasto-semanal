@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Pregunta from './components/Pregunta';
 import Formulario from './components/Formulario';
 import Listado from './components/Listado';
+import ControlPresupuesto from './components/ControlPresupuesto';
 
 function App() {
 
@@ -11,18 +12,34 @@ function App() {
   const [ restante, guardarRestante ] = useState(0);
   const [ mostrarpregunta, actualizarPregunta ] = useState(true);
   const [ gastos, guardarGastos ] = useState([]);
-
-  // nueva funcion que se agregara cuando se genere un nuevo gasto
-  const agregarNuevoGasto = gasto => {
-    guardarGastos([
-      ...gastos,
-         gasto
-    ])
-  }
+  const [ gasto, guardarGasto ] = useState({});
+  const [ creargasto, guardarCreargasto ] = useState(false);
 
 
+  // useEffect; que actualiza el restante
+  useEffect(() => {
+    if(creargasto) {
+
+      // agrega el nuevo presupuesto
+       guardarGastos([
+         ...gastos,
+          gasto
+       ]);
+
+       // resta el presupuesto actual
+       const presupuestoRestante = restante - gasto.cantidad; 
+       guardarRestante(presupuestoRestante);
 
 
+
+       // Resetear a False
+       guardarCreargasto(false);
+
+    }
+  }, [gasto]);
+
+    
+    
   return (
    <div className="container">
      <header>
@@ -40,7 +57,8 @@ function App() {
               <div className="row">
                 <div className="one-half column">
                   <Formulario
-                  agregarNuevoGasto={agregarNuevoGasto}
+                  guardarGasto={guardarGasto}
+                  guardarCreargasto={guardarCreargasto}
                   
                   />
                 </div>
@@ -48,9 +66,12 @@ function App() {
                 <div className="one-half column">
                   <Listado
                   gastos={gastos}
-                  
-                  
-                  
+
+                  />
+
+                  <ControlPresupuesto
+                    presupuesto={presupuesto}
+                    restante={restante}
                   />
                 </div>
               </div>
