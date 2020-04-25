@@ -1,5 +1,6 @@
 import React from 'react';
 import Gasto from './Gasto';
+/// documentar
 
 
 const Listado = ({gastos}) => (
