@@ -7,9 +7,8 @@ el control de cada gasto se pensó en un grado de porcentaje ;para indicar si es
 visualmente el porcentaje no lo muestra. pero, se penso mostrar al usuario con mensajes de alertas. <br>
 **Mensaje**
 - color verde : saldo a favor
-- color amarillo : saldo con precaucion
+- color amarillo : saldo 70% ocupado
 - color rojo : estas en el límite
-
 
 
 ## Herramientas de desarrollo
@@ -24,14 +23,14 @@ Este proyecto esta construido en :
 
 ### Correr este proyecto en tu localHost ?
 
-Si quieres ejecutar este proyecto y correlo en tu pc.
+Si quieres ejecutar este proyecto y correrlo en tu pc.
 debes hacer lo siguiente;
-- Clonar este repo
+- Clonar este repo o descarglo como zip
 - Abrir la terminal y ejecutar el visual code.
-- Comando npm start y Listo! (se te abrirà port:3000, petaña web)
+- Comando npm start y Listo! (se te abrirà port:3000, pestaña web)
 
 
 ### Deployment
 GH_pages [ ver Performance ? ]()
 
-Este proyecto lo puedes ver en  [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto lo puedes ver en [Netifly](https://github.com/facebook/create-react-app).
