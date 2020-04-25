@@ -4,8 +4,8 @@ Es un proyecto pequeño y simple ,que tiene por objetivo mantener tus gastos de 
 el control de cada gasto se pensó en un grado de porcentaje ;para indicar si estas en un 50% o mas del
 100% utilizado.
 
-visualmente el porcentaje no lo muestra. pero, se penso mostrar al usuario con mensajes de alertas.
-- *Mensaje*
+visualmente el porcentaje no lo muestra. pero, se penso mostrar al usuario con mensajes de alertas. <br>
+**Mensaje**
 - color verde : saldo a favor
 - color amarillo : saldo con precaucion
 - color rojo : estas en el límite
