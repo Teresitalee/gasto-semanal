@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gasto-semanal/static/css/main.a27ff935.chunk.css",
+    "main.js": "/gasto-semanal/static/js/main.e0b107d7.chunk.js",
+    "main.js.map": "/gasto-semanal/static/js/main.e0b107d7.chunk.js.map",
+    "runtime-main.js": "/gasto-semanal/static/js/runtime-main.b8b17fa2.js",
+    "runtime-main.js.map": "/gasto-semanal/static/js/runtime-main.b8b17fa2.js.map",
+    "static/js/2.4c9db2ee.chunk.js": "/gasto-semanal/static/js/2.4c9db2ee.chunk.js",
+    "static/js/2.4c9db2ee.chunk.js.map": "/gasto-semanal/static/js/2.4c9db2ee.chunk.js.map",
+    "index.html": "/gasto-semanal/index.html",
+    "precache-manifest.8799eda4181e0df371d7214e0672deb3.js": "/gasto-semanal/precache-manifest.8799eda4181e0df371d7214e0672deb3.js",
+    "service-worker.js": "/gasto-semanal/service-worker.js",
+    "static/css/main.a27ff935.chunk.css.map": "/gasto-semanal/static/css/main.a27ff935.chunk.css.map",
+    "static/js/2.4c9db2ee.chunk.js.LICENSE.txt": "/gasto-semanal/static/js/2.4c9db2ee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b8b17fa2.js",
+    "static/js/2.4c9db2ee.chunk.js",
+    "static/css/main.a27ff935.chunk.css",
+    "static/js/main.e0b107d7.chunk.js"
+  ]
+}
