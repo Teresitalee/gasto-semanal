@@ -31,6 +31,6 @@ debes hacer lo siguiente;
 
 
 ### Deployment
-GH_pages [ ver Performance ? ]()
+GH_pages [ ver Performance ? ](https://teresitalee.github.io/gasto-semanal/)
 
-Este proyecto lo puedes ver en [Netifly](https://github.com/facebook/create-react-app).
+Este proyecto lo puedes ver en [Netifly](https://ecstatic-colden-f4fa61.netlify.app/).
