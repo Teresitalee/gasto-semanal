@@ -5,10 +5,10 @@ el control de cada gasto se pensó en un grado de porcentaje ;para indicar si es
 100% utilizado.
 
 visualmente el porcentaje no lo muestra. pero, se penso mostrar al usuario con mensajes de alertas.
-**Mensaje; 
-- color verde; saldo a favor
-- color amarillo ; saldo con precaucion
-- color rojo ; estas en el límite
+- *Mensaje*
+- color verde : saldo a favor
+- color amarillo : saldo con precaucion
+- color rojo : estas en el límite
 
 
 
@@ -16,9 +16,9 @@ visualmente el porcentaje no lo muestra. pero, se penso mostrar al usuario con m
 
 Este proyecto esta construido en :
  - React JS : framework de javascript
- - Skeleton ; framework css
- - Normalize ; mantener los estilos css en todos los navegadores
- - GoogleFonts, fuentes de tipografía 
+ - Skeleton : framework css
+ - Normalize : mantener los estilos css en todos los navegadores
+ - GoogleFonts : Fuentes de tipografía 
 
 
 
